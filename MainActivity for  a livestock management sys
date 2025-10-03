@@ -1,0 +1,50 @@
+package com.example.data
+
+import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider.*
+import com.cohealth.monitoring.data.AppDatabase
+import com.cohealth.monitoring.data.AnimalRepository
+import com.cohealth.monitoring.databinding.ActivityMainBinding
+import com.cohealth.monitoring.ui.AnimalViewModel
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    private val viewModel: AnimalViewModel by viewModels {
+        AnimalViewModelFactory(AnimalRepository(AppDatabase.getDatabase(this).animalDao()))
+    }
+
+    fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnScanRfid.setOnClickListener {
+            // Simulate RFID read (replace with hardware SDK call, e.g., Zebra RFID)
+            val mockRfid = "RFID12345678" // From microchip
+            viewModel.simulateRfidRead(mockRfid)
+        }
+
+        binding.btnViewDashboard.setOnClickListener {
+            // Navigate to DashboardFragment (add Navigation component if needed)
+            // For simplicity, just log; implement fragment navigation
+        }
+
+        binding.btnSyncCloud.setOnClickListener {
+            viewModel.syncCloud()
+        }
+    }
+}
+
+// ViewModel Factory (for Hilt/Dagger later; simple for now)
+class AnimalViewModelFactory(private val repository: AnimalRepository) : Factory,
+    Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(AnimalViewModel::class.java)) {
+            @Suppress("UNCHECKED_CAST")
+            return AnimalViewModel(repository) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
+    }
+}
