@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @Don-Raimo
+- 👋 Hi, I’m @Don_Raimo 
 - 👀 I’m interested in ..
-- 🌱 I’m currently doing Software Engineering level 4 learning Java, Python,Html and Javasrcipt 
+- 🌱 I’m currently majoring in Software Engineering for 4 years learning Java, Python,React, Php and Javasrcipt 
 - 📫 How to reach me? -> raimobobby@gmail.com
 - 😄 Pronouns: Front End,Back End, Junior Developer and Software developer 
 
