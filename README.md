@@ -1,10 +1,26 @@
-- 👋 Hi, I’m @Don_Raimo 
-- 👀 I’m interested in ..
-- 🌱 I’m currently majoring in Software Engineering for 4 years learning Java, Python,React, Php and Javasrcipt 
-- 📫 How to reach me? -> raimobobby@gmail.com
-- 😄 Pronouns: Front End,Back End, Junior Developer and Software developer 
+# 👋 Hi, I’m Don Raimo
 
-<!---
-Don-Raimo/Don-Raimo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## 👀 Interests
+- Software Engineering & Digital Empowerment  
+- Building student-centered platforms  
+- Exploring AI, web development, and creative coding  
+
+## 🌱 Currently Learning
+I’m majoring in **Software Engineering (4-year program)** and actively learning:  
+- Java  
+- Python  
+- HTML & React  
+- PHP  
+- JavaScript  
+
+## 💼 Roles & Aspirations
+- Front-End Developer  
+- Back-End Developer  
+- Junior Developer  
+- Aspiring Software Engineer  
+
+## 📫 Contact Me
+📧 Email: raimobobby@gmail.com  
+
+## 😄 Fun Fact
+I enjoy bridging technical design with user-friendly documentation to empower students and teams.
